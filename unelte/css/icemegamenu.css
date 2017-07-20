@@ -9,7 +9,7 @@
     text-transform: uppercase;
 }
 #menusus {
-    background: url("/pics/menubar.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("../pics/menubar.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     float: left;
     height: 67px;
     margin: 0;
