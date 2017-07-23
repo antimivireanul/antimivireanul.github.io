@@ -1,0 +1,12 @@
+#Site Settings
+name: Biserica Ortodoxa Sfantul Martir Antim Ivireanul
+title: Parohia Antim Ivireanul
+email: parohiaantim@gmail.com
+description: Biserica parohială a comunităţii ortodoxe Sfântul Antim Ivireanul din Cergy-Pontoise, care se află în apropiere, a fost cumpărată de la Dioceza catolică, aceasta din urmă acceptând propunerea Mitropoliei româneşti cu sediul în apropierea Parisului.
+timezone: Europe/Paris
+author: Preot Paroh Lilian Mantaluta
+author_email: preotlilianmantaluta@yahoo.fr
+url: https://antimivireanul.ml
+permalink: pretty
+paginate: 3
+exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
