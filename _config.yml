@@ -10,5 +10,7 @@ url: https://antimivireanul.ml
 permalink: pretty
 paginate: 3
 paginate_path: "/blog/page:num/"
+gems:
+  - jekyll-sitemap
 exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
 permalink: /blog/:year/:title
