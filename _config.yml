@@ -11,6 +11,7 @@ permalink: pretty
 paginate: 3
 paginate_path: "/blog/page:num/"
 gems:
-  - jekyll-sitemap
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
 permalink: /blog/:year/:title
