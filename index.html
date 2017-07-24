@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html class="w-mod-js w-mod-no-touch w-mod-video w-mod-no-ios wf-ubuntu-n3-active wf-ubuntu-i3-active wf-ubuntu-n4-active wf-ubuntu-i4-active wf-ubuntu-n5-active wf-ubuntu-i5-active wf-ubuntu-n7-active wf-ubuntu-i7-active wf-arvo-n4-active wf-arvo-i4-active wf-arvo-n7-active wf-arvo-i7-active wf-active" style="">
   <head>
@@ -295,3 +296,28 @@
     <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
   </body>
 </html>
+=======
+---
+layout: default
+title: Parohia Antim Ivireanul
+---
+<div class="blurb">
+  <h1>Nou locaș de rugăciune pentru ortodocșii români din Franța</h1>
+<p>Biserica parohială a comunităţii ortodoxe Sfântul Antim Ivireanul din Cergy-Pontoise, care se află în apropiere, a fost cumpărată de la Dioceza catolică, aceasta din urmă acceptând propunerea Mitropoliei româneşti cu sediul în apropierea Parisului.</p>	
+</div><!-- /.blurb -->
+
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
+>>>>>>> origin/master
