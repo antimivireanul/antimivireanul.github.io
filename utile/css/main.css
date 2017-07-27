@@ -69,39 +69,28 @@ p { margin:0 0 10px; }
     width: 921px; }
 /* PURE Menu */
 .custom-menu-wrapper {
-  background-color: #808080;
-  margin-bottom: 2.5em;
-  white-space: nowrap;
-  position: relative;
+
 }
 
 .custom-menu {
-  display: inline-block;
-  width: auto;
-  vertical-align: middle;
   -webkit-font-smoothing: antialiased;
 }
 
 .custom-menu .pure-menu-link,
 .custom-menu .pure-menu-heading {
-  color: white;
+
 }
 
 .custom-menu .pure-menu-link:hover,
 .custom-menu .pure-menu-heading:hover {
-  background-color: transparent;
 }
 
 .custom-menu-top {
-  position: relative;
-  padding-top: .5em;
-  padding-bottom: .5em;
+
 }
 
 .custom-menu-brand {
-  display: block;
-  text-align: center;
-  position: relative;
+
 }
 
 .custom-menu-toggle {
