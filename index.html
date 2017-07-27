@@ -15,58 +15,82 @@
 			<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
 		<![endif]-->
 		<link rel="stylesheet" href="/utile/css/main.css">
+		<link rel="stylesheet" href="http://mitropolia-ro.de/modules/mod_icemegamenu/themes/default/css/default_icemegamenu.css" type="text/css">
 		<script async="" src="https://www.google-analytics.com/analytics.js"></script>
 		<script src="/utile/js/main.js"></script>
+		<script src="http://mitropolia-ro.de/modules/mod_icemegamenu/assets/js/icemegamenu.js" type="text/javascript"></script>
 	</head>
 	<body>
 		<!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-		
-		<div class="header-container">
-            <header class="wrapper clearfix">
-                <h1 class="title">Biserica Ortodoxă Sfântul Martir Antim Ivireanul</h1>
-                <div class="custom-menu-wrapper">
-					<div class="pure-menu custom-menu custom-menu-top">
-					  <a href="#" class="pure-menu-heading custom-menu-brand">Parohia Antim</a>
-					  <a href="#" class="custom-menu-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
+		<div class="custom-menu-wrapper">
+			<div class="pure-menu custom-menu custom-menu-top">
+			  <a href="#" class="pure-menu-heading custom-menu-brand">Parohia Antim Ivireanul</a>
+			  <a href="#" class="custom-menu-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
+			</div>
+			<div class="pure-menu pure-menu-horizontal pure-menu-scrollable custom-menu custom-menu-bottom custom-menu-tucked" id="tuckedMenu">
+				<div id="menusus">		
+					<div class="module">
+						<div>
+							<div>
+								<div>
+									<div class="icemegamenu">
+										<div class="custom-menu-screen"></div>
+										<ul id="icemegamenu" class="pure-menu-list">
+											<li id="iceMenu_101" class="iceMenuLiLevel_1 active pure-menu-item">
+												<a href="#" class="icemega_active iceMenuTitle pure-menu-link"><span class="icemega_title icemega_nosubtitle">Acasă</span></a>
+											</li>
+											<li id="iceMenu_102" class="iceMenuLiLevel_1 parent pure-menu-item">
+												<a href="/index.php/mitropolia" class=" iceMenuTitle pure-menu-link"><span class="icemega_title icemega_nosubtitle">Mitropolia</span></a>
+												<ul class="icesubMenu sub_level_1" style="width:280px">
+													<li><div style="float:left;width:280px" class="iceCols"><ul><li id="iceMenu_221" class="iceMenuLiLevel_2 parent"><a href="/index.php?Itemid=" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Structură</span></a><ul class="icesubMenu sub_level_2" style="width:280px"><li><div style="float:left;width:280px" class="iceCols"><ul><li id="iceMenu_222" class="iceMenuLiLevel_3"><a href="/index.php/mitropolia/arhiepiscopia" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Arhiepiscopia</span></a></li><li id="iceMenu_223" class="iceMenuLiLevel_3"><a href="http://www.cbrom.de" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">CBROM</span></a></li><li id="iceMenu_224" class="iceMenuLiLevel_3"><a href="http://episcopiascandinavia.se/" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Episcopia Europei de Nord</span></a></li></ul></div></li></ul></li><li id="iceMenu_103" class="iceMenuLiLevel_2"><a href="/index.php/mitropolia/istoric-mitropolia-germaniei" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Istoricul pe larg</span></a></li><li id="iceMenu_105" class="iceMenuLiLevel_2"><a href="/index.php/mitropolia/arhiepiscopia" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Arhiepiscopia</span></a></li><li id="iceMenu_193" class="iceMenuLiLevel_2"><a href="/index.php/mitropolia/statutul" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Statutul Mitropoliei</span></a></li><li id="iceMenu_205" class="iceMenuLiLevel_2"><a href="/index.php/mitropolia/ordine-si-distinctii" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Ordine și distincții</span></a></li></ul></div></li>
+												</ul>
+											</li>
+										  <li id="iceMenu_103" class="iceMenuLiLevel_1 parent pure-menu-item"><a href="#" class="iceMenuTitle pure-menu-link"><span class="icemega_title icemega_nosubtitle">About</span></a></li>
+										  <li id="iceMenu_104" class="iceMenuLiLevel_1 parent pure-menu-item"><a href="#" class="iceMenuTitle pure-menu-link"><span class="icemega_title icemega_nosubtitle">Contact</span></a></li>
+										  <li id="iceMenu_105" class="iceMenuLiLevel_1 parent pure-menu-item"><a href="#" class="iceMenuTitle pure-menu-link"><span class="icemega_title icemega_nosubtitle">Blog</span></a></li>
+										  <li id="iceMenu_106" class="iceMenuLiLevel_1 parent pure-menu-item"><a href="#" class="iceMenuTitle pure-menu-link"><span class="icemega_title icemega_nosubtitle">GitHub</span></a></li>
+										  <li id="iceMenu_107" class="iceMenuLiLevel_1 parent pure-menu-item"><a href="#" class="iceMenuTitle pure-menu-link"><span class="icemega_title icemega_nosubtitle">Twitter</span></a></li>
+										</ul>								
+										<script type="text/javascript">
+											window.addEvent('domready', function() {    
+												if(document.getElementById('icemegamenu')!= null)
+												var myMenu = new MenuMatic({id:'icemegamenu',
+													subMenusContainerId: 'subMenusContainer',
+													effect:'slide &amp; fade',
+													duration:600,
+													physics:Fx.Transitions.Pow.easeOut,
+													hideDelay:1000,
+													opacity:95                                            
+												});
+											});
+										</script>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-					<nav class="pure-menu pure-menu-horizontal pure-menu-scrollable custom-menu custom-menu-bottom custom-menu-tucked" id="tuckedMenu">
-					  <div class="custom-menu-screen"></div>
-					  <ul class="pure-menu-list">
-						  <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
-						  <li class="pure-menu-item"><a href="#" class="pure-menu-link">About</a></li>
-						  <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
-						  <li class="pure-menu-item"><a href="#" class="pure-menu-link">Blog</a></li>
-						  <li class="pure-menu-item"><a href="#" class="pure-menu-link">GitHub</a></li>
-						  <li class="pure-menu-item"><a href="#" class="pure-menu-link">Twitter</a></li>
-						  <li class="pure-menu-item"><a href="#" class="pure-menu-link">Apple</a></li>
-						  <li class="pure-menu-item"><a href="#" class="pure-menu-link">Google</a></li>
-						  <li class="pure-menu-item"><a href="#" class="pure-menu-link">Wang</a></li>
-						  <li class="pure-menu-item"><a href="#" class="pure-menu-link">Yahoo</a></li>
-						  <li class="pure-menu-item"><a href="#" class="pure-menu-link">W3C</a></li>
-					  </ul>
-					</nav>
-				</div>		
-            </header>
-        </div>
+				</div>
+			</div>
+		</div>
 		<div class="main-container">
             <div class="main wrapper clearfix">
                 <article>
                     <header>
-                        <h1>article header h1</h1>
+                        <h1>Parohia Antim Ivireanul</h1>
                         <p>Începând din acest an, românii ortodocși din Franța au încă un locaș de închinare. După mai mult de un secol de la ridicarea ei, Capela romano-catolică „Sfântul Nicolae” din orășelul Auvers-sur-Oise, situat la nord-est de Paris, în departamentul Val-d’Oise, din regiunea Île-de-France, a intrat de câteva săptămâni în proprietatea Mitropoliei Ortodoxe Române a Europei Occidentale şi Meridionale.
-						</p><br>
+						</p>
 						<p>Construită în 1910, capela nu mai era folosită pentru cult deja de câteva decenii, servind până în 2010 drept anticariat de carte religioasă, aflăm din jurnalul francez „Le Parisien”. La sfârșitul lunii august 2015, dieceza romano-catolică a pus-o în vânzare la prețul de 233.000 de euro, clădirea având nevoie de lucrări de reconsolidare în valoare de cel puțin 100.000 de euro. 
-						</p><br>
+						</p>
 						<p>După ce a scăpat de la demolare (în locul ei se dorea la un moment dat construirea unui complex imobiliar), capela a fost cumpărată la sfârșitul anului 2016 de singura parohie ortodoxă română din departamentul Val-d’Oise, la prețul de 190.430 de euro.
-						</p><br>
+						</p>
 						<p>Până să aibă o bisericuță proprie, tânăra comunitate de români (unii veniți de pe malul stâng al Prutului, din Basarabia), ocrotită de Sfântul Ierarh Martir Antim Ivireanul și păstorită de părintele paroh Lilian Măntăluță, se aduna pentru Sfintele Taine la Capela „Sainte-Thérèse” din comuna Saint-Ouen-l’Aumône. Vorbind despre acest efort financiar al românilor plecați departe de locurile natale, pr. Lilian Măntăluță a declarat: „42% s-au strâns din partea credincioșilor, din toate colțurile lumii au donat, iar restul sunt împrumuturi din partea altor parohii”, informează TRINITAS TV.
-						</p><br>
+						</p>
 						<p>Semnarea actelor la notar s-a făcut în data de 4 ianuarie 2017. Este un moment major pentru diaspora ortodocșilor români din Franța, căci până astăzi doar aproximativ 1% din cre­dincioșii români plecați în Occident beneficiază de o biserică a lor, foarte multe dintre parohiile române înființate în afara granițelor țării funcționând în capele și biserici închiriate. În regiunea pariziană există deja douăsprezece parohii românești, majoritatea găzduite în cripte și capele catolice, Capela „Sfântul Nicolae” constituind cel de-al treilea locaș de cult propriu al diasporei românești din regiunea Île-de-France.
-						</p><br>
+						</p>
 						<p>Cu suma obținută din vânzarea capelei, credincioșii roma­no-ca­tolici vor putea contribui la finanțarea unui alt proiect: construirea unei noi biserici în Montigny-lès-Cormeilles, o altă comună a aceluiași departament francez. Piatra de temelie a acestui nou locaș de cult, pentru care se vor cheltui aproximativ trei milioane de euro, urmează să fie pusă în luna iunie a acestui an.
-						</p><br>
+						</p>
 						<p>Lucrările de amenajare a edificiului achiziționat de românii din această parte a Franței au fost deja demarate sâmbătă, 28 ianuarie, cu câteva zile în urmă, pe pagina de Facebook a acestei parohii românești fiind postat și următorul mesaj: „Cu ajutorul lui Dumnezeu, astăzi am început prin a trage curent electric la biserica noastră. Ne bucurăm că avem ajutorul credincioșilor, ne bucurăm că am fost primiți de vecinii din preajmă cu căldură. Astăzi, în timp ce lucra echipa de electricieni, s-a apropiat o doamnă și a mărturisit bucuria ei de a vedea că Biserica «Sfântul Nicolae» din Auvers-sur-Oise prinde din nou viață. Ușile s-au deschis după cei 40 de ani de abandonare. Prin mila lui Dumnezeu și prin sprijinul credincioșilor, vom reuși să ducem la bun sfârșit renovarea bisericii”.
 						</p>
                     </header>
