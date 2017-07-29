@@ -354,3 +354,35 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1da36', end
 	height:25%;
 	padding-bottom:50px;
 }
+/* Thumbnails */
+#thumbnails{
+		
+	margin: 0 auto;
+}
+
+.thumb-box {
+  padding: 1.4em 0 1em;
+  margin-left: -1%;
+width: 102%;}
+ .thumb-box .thumbs {
+ overflow: auto;
+ list-style:none;}
+  .thumb-box .thumbs li {
+      float: left;
+      width: 22%;
+      text-align: center;
+  padding: 0 1%;}
+     .thumb-box .thumbs li img {
+        width: 100%;
+        opacity: .8;
+        @include transition(opacity .32s);
+	 border-bottom: 4px solid transparent;}
+       .thumb-box .thumbs li img:active {
+          border-color: $bc-rk-blue;
+          opacity: 1;
+        }
+      .thumb-box .thumbs li img:hover {
+        
+          opacity: 1;
+          @include transition(opacity .2s);
+	  }
