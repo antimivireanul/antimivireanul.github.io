@@ -7,7 +7,7 @@
     var
     // default settings object.
         defaults = {
-            label: 'MENU',
+            label: 'MENIU',
             duplicate: true,
             duration: 200,
             easingOpen: 'swing',
@@ -17,14 +17,14 @@
             prependTo: 'body',
             appendTo: '',
             parentTag: 'a',
-            closeOnClick: false,
+            closeOnClick: true,
             allowParentLinks: false,
             nestedParentLinks: true,
             showChildren: false,
             removeIds: true,
             removeClasses: false,
             removeStyles: false,
-			brand: '',
+			brand: '<img src="pics/pi_bible.png" style="height:40px; padding-bottom:5px">',
             animations: 'jquery',
             init: function () {},
             beforeOpen: function () {},
