@@ -1,57 +1,80 @@
----
----
+$(document).ready(function() {
 
-/*!
- * Basically Basic Jekyll Theme 1.1.0
- * Copyright 2017 Michael Rose - mademistakes | @mmistakes
- * Free for personal and commercial use under the MIT license
- * https://github.com/mmistakes/jekyll-basically-theme/blob/master/LICENSE.md
-*/
+  // Variables
+  var $codeSnippets = $('.code-example-body'),
+      $nav = $('.navbar'),
+      $body = $('body'),
+      $window = $(window),
+      $popoverLink = $('[data-popover]'),
+      navOffsetTop = $nav.offset().top,
+      $document = $(document),
+      entityMap = {
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': '&quot;',
+        "'": '&#39;',
+        "/": '&#x2F;'
+      }
 
-// Animate sidebar menu items
-var menuItems = document.querySelectorAll('#sidebar li');
-
-// Get vendor transition property
-var docElemStyle = document.documentElement.style;
-var transitionProp = typeof docElemStyle.transition == 'string' ?
-    'transition' : 'WebkitTransition';
-
-function animateMenuItems() {
-  for ( var i=0; i < menuItems.length; i++ ) {
-    var item = menuItems[i];
-    // Stagger transition with transitionDelay
-    item.style[ transitionProp + 'Delay' ] = ( i * 75 ) + 'ms';
-    item.classList.toggle('is--moved');
+  function init() {
+    $window.on('scroll', onScroll)
+    $window.on('resize', onScroll)
+    $('a[href^="#"]').on('click', smoothScroll)
+    buildSnippets();
   }
-};
 
-// Toggle sidebar visibility
-function toggleClassMenu() {
-  myMenu.classList.add('is--animatable');
-  if(!myMenu.classList.contains('is--visible')) {
-    myMenu.classList.add('is--visible');
-    myToggle.classList.add('open');
-    myWrapper.classList.add('is--pushed');
-  } else {
-    myMenu.classList.remove('is--visible');
-    myToggle.classList.remove('open');
-    myWrapper.classList.remove('is--pushed');
+  function smoothScroll(e) {
+    e.preventDefault();
+    $(document).off("scroll");
+    var target = this.hash,
+        menu = target;
+    $target = $(target);
+    $('html, body').stop().animate({
+        'scrollTop': $target.offset().top-40
+    }, 0, 'swing', function () {
+        window.location.hash = target;
+        $(document).on("scroll", onScroll);
+    });
   }
-}
 
-function OnTransitionEnd() {
-  myMenu.classList.remove('is--animatable');
-}
+  $("#button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#elementtoScrollToID").offset().top
+    }, 2000);
+});
 
-var myWrapper = document.querySelector('.wrapper');
-var myMenu = document.querySelector('.sidebar');
-var myToggle = document.querySelector('.toggle');
-myMenu.addEventListener('transitionend', OnTransitionEnd, false);
-myToggle.addEventListener('click', function() {
-  toggleClassMenu();
-  animateMenuItems();
-}, false);
-myMenu.addEventListener('click', function() {
-  toggleClassMenu();
-  animateMenuItems();
-}, false);
+  function resize() {
+    $body.removeClass('has-docked-nav')
+    navOffsetTop = $nav.offset().top
+    onScroll()
+  }
+
+  function onScroll() {
+	  $body.removeClass('has-docked-nav')
+    navOffsetTop = $nav.offset().top
+    if(navOffsetTop < $window.scrollTop()) {
+      $body.addClass('has-docked-nav')
+    }
+    if(navOffsetTop > $window.scrollTop() && $body.hasClass('has-docked-nav')) {
+      $body.removeClass('has-docked-nav')
+    }
+  }
+
+  function escapeHtml(string) {
+    return String(string).replace(/[&<>"'\/]/g, function (s) {
+      return entityMap[s];
+    });
+  }
+
+  function buildSnippets() {
+    $codeSnippets.each(function() {
+      var newContent = escapeHtml($(this).html())
+      $(this).html(newContent)
+    })
+  }
+
+
+  init();
+
+});

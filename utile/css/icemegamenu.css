@@ -1,23 +1,4 @@
-#menusus ul li {
-    border-right: 1px solid #FFFFFF;
-    color: #CCCCCC;
-    display: inline-block;
-    font-family: TrajanPro;
-    line-height: 16px;
-    list-style: none outside none;
-    padding: 0 10px;
-    text-transform: uppercase;
-}
-#menusus {
-    background: url("../../pics/menubar.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-    float: left;
-    height: 67px;
-    margin: 0;
-    width: 1140px;
-}
-.icemegamenu .active a span {color:#FFF!important;}
-.icemegamenu {position:relative;}
-f/**
+/**
  * IceMegaMenu Extension for Joomla 1.6 By IceTheme
  * 
  * 
@@ -30,16 +11,18 @@ f/**
  */
  
 
-a,img{outline:none;margin:0;padding:0;border:none;}
+/* Larger than tablet */
+@media (min-width: 750px) {
 div.icemegamenu { 
-	position:relative;}
+	position:relative;
+	}
 	
 
 div.icemegamenu ul#icemegamenu {
 	display:block;
 	background:#3a4150;
 	list-style:none;
-	margin:30px 0 0 18px;
+	margin:30px 0 0 0px;
 	padding: 0;
 	z-index:5;
 	position:absolute;
@@ -284,5 +267,5 @@ div#subMenusContainer ul.icesubMenu li div.iceCols ul {
 	list-style:none;
 	padding:0px;
 	margin:0px;}
-	
+	}
 	
