@@ -344,7 +344,7 @@ src: url('/TrajanPro-Regular.otf'),
 #head_grad_down {
 	height:440px;
 	/* Permalink - use to edit and share this gradient: colorzilla.com/gradient-editor/#f1da36+0,fcf18a+12,f9f5ca+26,fcfcfc+50,f9f5ca+66,fcf18a+86,f1da36+100 */
-	background: rgba(58,65,80,0.1)/*#f1da36; /* Old browsers */
+	background: rgba(58,65,80,0.8)/*#f1da36; /* Old browsers */
 /*background: -moz-linear-gradient(top, #f1da36 0%, #fcf18a 12%, #f9f5ca 26%, #fcfcfc 50%, #f9f5ca 66%, #fcf18a 86%, #f1da36 100%); /* FF3.6-15 */
 /*background: -webkit-linear-gradient(top, #f1da36 0%,#fcf18a 12%,#f9f5ca 26%,#fcfcfc 50%,#f9f5ca 66%,#fcf18a 86%,#f1da36 100%); /* Chrome10-25,Safari5.1-6 */
 /*background: linear-gradient(to bottom, #f1da36 0%,#fcf18a 12%,#f9f5ca 26%,#fcfcfc 50%,#f9f5ca 66%,#fcf18a 86%,#f1da36 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
