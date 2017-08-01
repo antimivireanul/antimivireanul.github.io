@@ -269,8 +269,7 @@ li.L5, li.L6, li.L7, li.L8
     height: 6.5rem;
     background: #fff;
     z-index: 99;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee; }
+}
   .navbar-spacer {
     display: none; }
   .navbar > .container {
@@ -279,7 +278,7 @@ li.L5, li.L6, li.L7, li.L8
   .has-docked-nav .navbar {
     position: fixed;
     top: 0;
-    left: 0; }
+    }
   .has-docked-nav .navbar-spacer {
     display: block; }
   /* Re-overiding the width 100% declaration to match size of % based container */
@@ -298,6 +297,7 @@ li.L5, li.L6, li.L7, li.L8
     padding: 0 10px;
     text-transform: uppercase;
 }
+
 .icemegamenu .active a span {color:#FFF!important;}
 .icemegamenu {position:relative;}
 @font-face {font-family: TrajanPro;
@@ -309,7 +309,7 @@ src: url('/TrajanPro-Regular.otf'),
     float: left;
     height: 67px;
     margin: 0;
-    width: 1140px;
+    width: 100%;
 }
 
 .icesubMenu .sub_level_2{
@@ -344,13 +344,19 @@ src: url('/TrajanPro-Regular.otf'),
 #head_grad_down {
 	height:440px;
 	/* Permalink - use to edit and share this gradient: colorzilla.com/gradient-editor/#f1da36+0,fcf18a+12,f9f5ca+26,fcfcfc+50,f9f5ca+66,fcf18a+86,f1da36+100 */
-	background: #f1da36; /* Old browsers */
-background: -moz-linear-gradient(top, #f1da36 0%, #fcf18a 12%, #f9f5ca 26%, #fcfcfc 50%, #f9f5ca 66%, #fcf18a 86%, #f1da36 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #f1da36 0%,#fcf18a 12%,#f9f5ca 26%,#fcfcfc 50%,#f9f5ca 66%,#fcf18a 86%,#f1da36 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #f1da36 0%,#fcf18a 12%,#f9f5ca 26%,#fcfcfc 50%,#f9f5ca 66%,#fcf18a 86%,#f1da36 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1da36', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */	
+	background: rgba(58,65,80,0.1)/*#f1da36; /* Old browsers */
+/*background: -moz-linear-gradient(top, #f1da36 0%, #fcf18a 12%, #f9f5ca 26%, #fcfcfc 50%, #f9f5ca 66%, #fcf18a 86%, #f1da36 100%); /* FF3.6-15 */
+/*background: -webkit-linear-gradient(top, #f1da36 0%,#fcf18a 12%,#f9f5ca 26%,#fcfcfc 50%,#f9f5ca 66%,#fcf18a 86%,#f1da36 100%); /* Chrome10-25,Safari5.1-6 */
+/*background: linear-gradient(to bottom, #f1da36 0%,#fcf18a 12%,#f9f5ca 26%,#fcfcfc 50%,#f9f5ca 66%,#fcf18a 86%,#f1da36 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1da36', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */	
 }
 #logo{
-	height:25%;
+	height:37%;
 	padding-bottom:50px;
+}
+header h1{
+	border-bottom: solid 3px #f56a6a;
+display: inline-block;
+padding: 0.7em 0.75em 0.5em 0;
+
 }

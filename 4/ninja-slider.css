@@ -3,7 +3,8 @@
 #ninja-slider {
     width:100%;
     background:#383c48;
-
+    padding-top:30px;
+    padding-bottom:10px;
 
     margin:0 auto;
     overflow:hidden;
@@ -11,7 +12,7 @@
 }
 
 #ninja-slider.fullscreen {
-    background:black;
+    background:#383c48;
 }
 
 #ninja-slider.fullscreen #ninja-slider-prev {
@@ -44,7 +45,7 @@
 }
 
 #ninja-slider .slider-inner {
-    max-width:800px;
+    max-width:700px;
     margin:0 auto;/*center-aligned*/
     font-size:0px;
     position:relative;
@@ -89,7 +90,7 @@
 /* --------- slider image ------- */  
 #ninja-slider .ns-img {
     background-color:rgba(0,0,0,0.3);
-    /*background-size:contain;/*Note: If transitionType is zoom, it will be overridden to cover.*/
+    background-size:contain;/*Note: If transitionType is zoom, it will be overridden to cover.*/
 
     border-radius:3px;
 
@@ -202,4 +203,3 @@
         display:none;
     }
 }
-

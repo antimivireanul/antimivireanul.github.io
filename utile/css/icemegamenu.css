@@ -15,6 +15,8 @@
 @media (min-width: 750px) {
 div.icemegamenu { 
 	position:relative;
+	text-align:center;
+	width:100%;
 	}
 	
 
@@ -27,7 +29,10 @@ div.icemegamenu ul#icemegamenu {
 	z-index:5;
 	position:absolute;
 	top:0;
-	left:0;}	
+	margin-left: auto;
+    margin-right: auto;
+    display: table;
+	}	
 	
 	div.icemegamenu ul#icemegamenu li { 
 		display:block;

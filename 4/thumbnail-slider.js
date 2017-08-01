@@ -6,7 +6,7 @@ var thumbnailSliderOptions =
     thumbWidth: "auto",
     thumbHeight: "50px",
     showMode: 3,
-    autoAdvance: false,
+    autoAdvance: true,
     selectable: true,
     slideInterval: 3000,
     transitionSpeed: 700,
