@@ -27,7 +27,7 @@ div.icemegamenu ul#icemegamenu {
 	margin:30px 0 0 0px;
 	padding: 0;
 	z-index:5;
-	position:absolute;
+	/*position:absolute;*/
 	top:0;
 	margin-left: auto;
     margin-right: auto;
