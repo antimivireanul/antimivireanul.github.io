@@ -310,6 +310,7 @@ src: url('/TrajanPro-Regular.otf'),
     height: 67px;
     margin: 0;
     width: 100%;
+	max-width:1140px;
 }
 
 .icesubMenu .sub_level_2{
