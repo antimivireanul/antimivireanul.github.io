@@ -416,7 +416,7 @@ padding: 0.7em 0.75em 0.5em 0;
 
 }
 .fixedbackground {
-	background-image: url(../../pics/bg_bodywrap.jpg);
+	/*background-image: url(../../pics/bg_bodywrap.jpg);*/
 	background-size: 100%;    
 	-webkit-background-size: cover;
     -moz-background-size: cover;
