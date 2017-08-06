@@ -7,7 +7,7 @@ var nsOptions =
     rewind: false,
     delay: "default",
     transitionSpeed: 400,
-    aspectRatio: "2:1",
+    aspectRatio: "1.775:1",
     initSliderByCallingInitFunc: false,
     shuffle: false,
     startSlideIndex: 0, //0-based

@@ -256,7 +256,39 @@ li.L5, li.L6, li.L7, li.L8
     left: 0;
     max-height: none; }
 }
+/* ------------------------ *//* ------------------------ *//* ------------------------ *//* ------------------------ */
 
+@font-face {
+	font-family: 'Arhaic_rom';
+	src: url('../../utile/fonts/Arhaic_rom.ttf') format('truetype');
+	font-weight: normal;
+	    font-style: normal;
+}
+@font-face {
+	font-family: 'Zamolxis-VII';
+	src: url('../../utile/fonts/Zamolxis-VII.ttf') format('truetype');
+	font-weight: normal;
+	    font-style: normal;
+}
+
+.title{
+	  font-family: 'Arhaic_rom', Arial, sans-serif;	
+	color: #f9ef84;
+	text-shadow: 0px 0px 35px #3A4151;
+	font-size: 48px;
+	font-size: calc(1.7em + 1.3vw);
+}
+body {
+	
+  font-size: calc(2em - 0.2vw);
+  
+}
+.has-docked-nav #navmobile  {
+    position: fixed;
+    top: 0;
+	width: 100%;
+	z-index: 99;
+    }
 /* Larger than tablet */
 @media (min-width: 750px) {
   /* Navbar */
@@ -267,7 +299,6 @@ li.L5, li.L6, li.L7, li.L8
     display: block;
     width: 100%;
     height: 6.5rem;
-    background: #fff;
     z-index: 99;
 }
   .navbar-spacer {
@@ -275,7 +306,7 @@ li.L5, li.L6, li.L7, li.L8
   .navbar > .container {
     width: 100%; }
 
-  .has-docked-nav .navbar {
+  .has-docked-nav .navbar{
     position: fixed;
     top: 0;
     }
@@ -284,7 +315,8 @@ li.L5, li.L6, li.L7, li.L8
   /* Re-overiding the width 100% declaration to match size of % based container */
   .has-docked-nav .navbar > .container {
     width: 80%; }
-/* ------------------------ *//* ------------------------ *//* ------------------------ *//* ------------------------ */
+
+
 /* ------------------------ *//* ------------------------ *//* ------------------------ *//* ------------------------ */
 #subMenusContainer .active a span {color:#FFF!important;}
 #menusus ul li {
@@ -310,7 +342,7 @@ src: url('/TrajanPro-Regular.otf'),
     height: 67px;
     margin: 0;
     width: 100%;
-	max-width:1140px;
+	max-width:1113px;
 }
 
 .icesubMenu .sub_level_2{
@@ -344,6 +376,7 @@ src: url('/TrajanPro-Regular.otf'),
 }
 #head_grad_down {
 	height:440px;
+    position: relative;
 	/* Permalink - use to edit and share this gradient: colorzilla.com/gradient-editor/#f1da36+0,fcf18a+12,f9f5ca+26,fcfcfc+50,f9f5ca+66,fcf18a+86,f1da36+100 */
 	background: rgba(58,65,80,0.8)/*#f1da36; /* Old browsers */
 /*background: -moz-linear-gradient(top, #f1da36 0%, #fcf18a 12%, #f9f5ca 26%, #fcfcfc 50%, #f9f5ca 66%, #fcf18a 86%, #f1da36 100%); /* FF3.6-15 */
@@ -354,6 +387,27 @@ src: url('/TrajanPro-Regular.otf'),
 #logo{
 	height:37%;
 	padding-bottom:50px;
+    margin: 0 auto 0;
+    z-index: 5;
+    position: relative;
+}
+.gradtop {
+    margin: 0px auto;
+    width: 100%;
+    height: 1200px;
+    top: 0px;
+    position: absolute;
+	-ms-transform:rotate(180deg);/*IE 9*/
+    -webkit-transform:rotate(180deg);
+    transform: rotate(180deg);
+    z-index: 1;
+}
+.gradbottom {
+    margin: 0px auto;
+    width: 100%;
+    height: 800px;
+    bottom: 0px;
+    position: absolute;
 }
 header h1{
 	border-bottom: solid 3px #f56a6a;
@@ -361,3 +415,70 @@ display: inline-block;
 padding: 0.7em 0.75em 0.5em 0;
 
 }
+.fixedbackground {
+	background-image: url(../../pics/bg_bodywrap.jpg);
+	background-size: 100%;    
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.adress {
+    color: #e1d87a;
+    font-size: calc(0.7em + 0.8vw);
+    text-align: center;
+    padding: 10px;
+}
+.icoana img{
+	margin:0 auto; 
+	width:100%; 
+	max-width: 400px; 
+	text-align: center;
+}
+.main-container {
+    background: #3A4151;
+    color: white;
+	padding: 10px;
+}
+.doxo-table .data-curenta {font-size: 26px !important;}
+.doxo-table .doxo-widget-rugaciuni .data-curenta {font-size: 26px !important; text-align:right;}
+.doxo-table .doxo-widget-rugaciuni .view-header {border-bottom:none;}
+.doxo-table .doxo-widget-rugaciuni .view-header:after {
+	  content:""; 
+  background: red; 
+  position: absolute; 
+  bottom: 0; 
+  right: 0; 
+  height: 4px; 
+  width: 100px;
+}
+.doxo-table .doxo-widget-rugaciuni .view-header a {font-size: 3.5rem !important;text-decoration: none; text-align:right;} 
+.doxo-table .doxo-widget-calendar .view-header a {font-size: 3.5rem !important;text-decoration: none; padding-bottom:10px;}
+.doxo-table .doxo-widget-calendar .c-prefix, .doxo-widget-calendar .c-sufix {font-size: 2.7rem !important;}
+.doxo-table .doxo-widget-calendar .box-title-sfant a, .doxo-widget-calendar .box-title-sfant {font-size: 2.2rem !important;}
+.doxo-table .doxo-widget-rugaciuni .view-content {text-align:right;}
+.doxo-table .doxo-widget-rugaciuni .view-content .views-field-title a {font-size: 2rem !important;}
+.inger_st{
+    margin:0 auto;
+    top: 100px;
+    position: relative;
+    left: 0px;
+	z-index:5;
+}
+.inger_dr{
+    margin:0 auto;
+    top: 100px;
+    position: relative;
+    right: 200px;
+	z-index:5;
+-moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+

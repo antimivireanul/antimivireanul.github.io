@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   // Variables
   var $codeSnippets = $('.code-example-body'),
-      $nav = $('.navbar'),
+      $nav = $('.stickynav'),
       $body = $('body'),
       $window = $(window),
       $popoverLink = $('[data-popover]'),
@@ -49,16 +49,16 @@ $(document).ready(function() {
     navOffsetTop = $nav.offset().top
     onScroll()
   }
-
   function onScroll() {
 	  $body.removeClass('has-docked-nav')
     navOffsetTop = $nav.offset().top
     if(navOffsetTop < $window.scrollTop()) {
-      $body.addClass('has-docked-nav')
+		$body.addClass('has-docked-nav')
     }
     if(navOffsetTop > $window.scrollTop() && $body.hasClass('has-docked-nav')) {
       $body.removeClass('has-docked-nav')
     }
+	
   }
 
   function escapeHtml(string) {

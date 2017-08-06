@@ -17,21 +17,18 @@ div.icemegamenu {
 	position:relative;
 	text-align:center;
 	width:100%;
+	margin:27px 0 0 0;
 	}
 	
 
 div.icemegamenu ul#icemegamenu {
-	display:block;
+	display:inline-block;
 	background:#3a4150;
 	list-style:none;
-	margin:30px 0 0 0px;
+	margin:0 auto;
 	padding: 0;
-	z-index:5;
-	position:absolute;
-	top:0;
-	margin-left: auto;
-    margin-right: auto;
-    display: table;
+	z-index:50000;
+	position:relative;
 	}	
 	
 	div.icemegamenu ul#icemegamenu li { 
@@ -57,6 +54,7 @@ div.icemegamenu ul#icemegamenu {
 	
 			div.icemegamenu ul#icemegamenu li span.icemega_title,
 			div#subMenusContainer span.icemega_title {
+				font-family: 'Zamolxis-VII', Arial, sans-serif;	
 				font-size:1.3em;}
 		
 			div.icemegamenu ul#icemegamenu li span.icemega_desc,
@@ -166,8 +164,6 @@ div#subMenusContainer {
 	color:#FFF!important;
 	}
 
-
-
 /* ----[ OLs ULs, LIs, and DIVs ]----*/
 
 /* Submenu Outer Wrapper - each submenu is inside a div with this class - javascript users only */
@@ -219,12 +215,24 @@ float:none; }
 
 /* lists nested under hovered list items */
 #icemegamenu li:hover ul {  margin-left: 0; }
-#icemegamenu li li li.iceMenuLiLevel_2:hover ul.sub_level_2 {   margin-left:21em; z-index:99; position:absolute; margin-top:-3.5em;  } 
+#icemegamenu li li li.iceMenuLiLevel_2:hover ul.sub_level_2 {   
+/*margin-left:21em; 
+z-index:99; 
+position:absolute;
+ margin-top:-3.5em;  */
+ margin-left:18em; 
+z-index:99; 
+position:absolute;
+ margin-top:-3.1em; 
+} 
 #icemegamenu li li.iceMenuLiLevel_2:hover ul.sub_level_2{    margin-left:8em; position: relative; margin-top:-3.5em;  }  
 /*#icemegamenu li li:hover ul {    margin-left: 10em; margin-top:-2.5em;}  */
 			 
 /* extra positioning rules for limited noscript keyboard accessibility */
-#icemegamenu li a:focus + ul {  margin-left: 0; margin-top:2.2em; }
+#icemegamenu li a:focus + ul { 
+ margin-left: 0; 
+/* margin-top:2.2em; */
+ }
 #icemegamenu li li a:focus + ul { left:0; margin-left: 1010em; margin-top:-2.2em;}
 #icemegamenu li li a:focus {left:0;  margin-left:1000em; width:10em;  margin-top:0;}
 #icemegamenu li li li a:focus {left:0; margin-left: 2010em; width: 10em;  margin-top:-1em;}

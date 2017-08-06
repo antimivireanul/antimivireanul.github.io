@@ -60,7 +60,8 @@
     display: block; }
   .slicknav_nav .slicknav_arrow {
     font-size: 0.8em;
-    margin: 0 0 0 0.4em; }
+    margin: 0 0 0 0.4em;
+color: #fff;	}
   .slicknav_nav .slicknav_item {
     cursor: pointer; }
     .slicknav_nav .slicknav_item a {

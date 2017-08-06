@@ -2,7 +2,7 @@
 
 #ninja-slider {
     width:100%;
-    background:#383c48;
+    background:#3A4151;
     padding-top:30px;
     padding-bottom:10px;
 
@@ -12,7 +12,7 @@
 }
 
 #ninja-slider.fullscreen {
-    background:#383c48;
+    background:#3A4151;
 }
 
 #ninja-slider.fullscreen #ninja-slider-prev {
