@@ -24,6 +24,7 @@
 
 
 #ninja-slider .fs-icon {
+	position:absolute;
     top:0px;
     right:0px;
     width:45px;
