@@ -32,12 +32,12 @@
         <![endif]-->
 	<div class="container-fluid">
 		<div class="row fixedbackground">
-			<div class="col-md-5">
+			<div class="col-md-5 mob-hidden">
 				<img class="value-img inger_st" src="pics/inger.png">
 			</div>
 			<div class="col-md-14">
 				<section class="header">
-					<div id="head_grad_down">
+					<div class="head_grad_top">
 						<img class="value-img" id="logo" src="pics/logo.png">
 						<img class="value-img gradtop" src="pics/bg_header.png">
 						<h1 class="title">Biserica Ortodoxă Sfântul Martir Antim Ivireanul</h1>		
@@ -46,20 +46,20 @@
 				</section>
 			
 			</div>
-			<div class="col-md-5">
+			<div class="col-md-5 mob-hidden">
 				<img class="value-img inger_dr" src="pics/inger.png">
 			</div>
 			
 		</div>
 		<!--T-ul-->
 		
-		<div class="row" style="background: #3A4151;">
-			<div class="col-md-5" style="padding: 20px;">
+		<div class="row match-my-cols" style="background:url(pics/bg.jpg)">
+			<div class="col-md-5 head_grad_left">
 				<div class="col-xs-12 col-md-24 icoana">
 					<img src="pics/sfantul-ierarh-antim-ivireanul.png">
 				</div>
-				<div class="col-xs-12 col-md-24 adress">
-					Adresa:<br>24 rue Simone le Danois,<br>95530 Auvers sur Oise<br>telefon:07.82.09.99.58
+				<div class="col-xs-12 col-md-24 adresa">
+					Adresa:<br>24 rue Simone le Danois,<br>95530 Auvers sur Oise<br>telefon: <a href="tel:0782099958">07.82.09.99.58</a>
 				</div>
 			</div>
 			<div class="col-md-14">
@@ -166,12 +166,12 @@
 					</div>
 				</section>
 			</div>			
-			<div class="col-md-5 content-right"></div>	
+			<div class="col-md-5 head_grad_right"></div>	
 		</div>
 
 		<div class="row">
-			<div class="col-md-5 content-left"></div>
-			<div class="col-md-14 content-middle">
+			<div class="col-md-5 mob-hidden"></div>
+			<div class="col-md-14">
 				<div class="stickynav">
 					<div class="navbar-spacer"></div>
 					<div id="navmobile"></div> 
@@ -189,18 +189,6 @@
 												<li><div style="float:left;width:280px" class="iceCols">
 													<ul>
 														<li id="iceMenu_221" class="iceMenuLiLevel_2 parent has-submenu"><a href="#" class="iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Locatie</span></a>
-															<ul class="icesubMenu sub_level_2" style="width:280px">
-																<li>
-																	<div style="float:left;width:280px" class="iceCols">
-																		<ul>
-																			<li id="iceMenu_331" class="iceMenuLiLevel_3"><a href="#" class=" iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Harta</span></a>
-																			</li>
-																			<li id="iceMenu_332" class="iceMenuLiLevel_3"><a href="#" class="iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Adresa</span></a>
-																			</li>
-																		</ul>
-																	</div>
-																</li>
-															</ul>
 														</li>
 														<li id="iceMenu_222" class="iceMenuLiLevel_2"><a href="#" class="iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Program</span></a>
 														</li>
@@ -213,13 +201,13 @@
 											</ul>
 										</li>
 										<li id="iceMenu_103" class="iceMenuLiLevel_1">
-											<a href="#" class="iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Antim Ivireanul</span></a>
+											<a href="#" class="iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Preot</span></a>
 										</li>
 										<li id="iceMenu_104" class="iceMenuLiLevel_1">
 											<a href="#" class="iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Proiecte</span></a>
 										</li>
 										<li id="iceMenu_105" class="iceMenuLiLevel_1">
-											<a href="#" class="iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Preot</span></a>
+											<a href="#" class="iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Antim Ivireanul</span></a>
 										</li>
 										<li id="iceMenu_106" class="iceMenuLiLevel_1">
 											<a href="#" class="iceMenuTitle"><span class="icemega_title icemega_nosubtitle">Albume Media</span></a>
@@ -235,7 +223,7 @@
 					</nav>
 				</div>
 			</div>
-			<div class="col-md-5 content-left"></div>
+			<div class="col-md-5 mob-hidden"></div>
 		</div>
 			
 			<script src="dist/jquery.slicknav.js"></script>
@@ -246,7 +234,7 @@
 			});
 		</script>
 		<div class="row">
-			<div class="col-md-5">
+			<div class="col-md-5 mob-hidden">
 				<table width="100%" class="doxo-table">
 					<tbody>
 					<tr>
@@ -263,14 +251,23 @@
 					</tbody>
 				</table>					
 			</div>
-			<div class="col-md-14">
-				<div class="main-container">
+			<div class="col-md-14" style="background:url(pics/bg.jpg)">
+				<div class="main-container head_grad_down">
 					<div class="main wrapper clearfix">
+						<div class="googlemap">
+							<header><h1>Locația pe Google Maps</h1></header>
+							<div class="map-responsive">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24874.123207945777!2d2.119616034573562!3d49.05679655795487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e65f7322909007%3A0x93069af13d53cd97!2s24+Rue+Simone+le+Danois%2C+95430+Auvers-sur-Oise%2C+Fran%C5%A3a!5e0!3m2!1sro!2sro!4v1502066459463" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+							</div>
+						</div>
 						<article>
-							<header>
-								<h1>Parohia Antim Ivireanul</h1>
-								<p>Începând din acest an, românii ortodocși din Franța au încă un locaș de închinare. După mai mult de un secol de la ridicarea ei, Capela romano-catolică „Sfântul Nicolae” din orășelul Auvers-sur-Oise, situat la nord-est de Paris, în departamentul Val-d’Oise, din regiunea Île-de-France, a intrat de câteva săptămâni în proprietatea Mitropoliei Ortodoxe Române a Europei Occidentale şi Meridionale.
-								</p>
+							<header><h1>Parohia Antim Ivireanul</h1>
+								<section>
+									<p>Începând din acest an, românii ortodocși din Franța au încă un locaș de închinare. După mai mult de un secol de la ridicarea ei, Capela romano-catolică „Sfântul Nicolae” din orășelul Auvers-sur-Oise, situat la nord-est de Paris, în departamentul Val-d’Oise, din regiunea Île-de-France, a intrat de câteva săptămâni în proprietatea Mitropoliei Ortodoxe Române a Europei Occidentale şi Meridionale.
+									</p>
+								</section>
+							</header>
+							<section>
 								<p>Construită în 1910, capela nu mai era folosită pentru cult deja de câteva decenii, servind până în 2010 drept anticariat de carte religioasă, aflăm din jurnalul francez „Le Parisien”. La sfârșitul lunii august 2015, dieceza romano-catolică a pus-o în vânzare la prețul de 233.000 de euro, clădirea având nevoie de lucrări de reconsolidare în valoare de cel puțin 100.000 de euro. 
 								</p>
 								<p>După ce a scăpat de la demolare (în locul ei se dorea la un moment dat construirea unui complex imobiliar), capela a fost cumpărată la sfârșitul anului 2016 de singura parohie ortodoxă română din departamentul Val-d’Oise, la prețul de 190.430 de euro.
@@ -283,19 +280,9 @@
 								</p>
 								<p>Lucrările de amenajare a edificiului achiziționat de românii din această parte a Franței au fost deja demarate sâmbătă, 28 ianuarie, cu câteva zile în urmă, pe pagina de Facebook a acestei parohii românești fiind postat și următorul mesaj: „Cu ajutorul lui Dumnezeu, astăzi am început prin a trage curent electric la biserica noastră. Ne bucurăm că avem ajutorul credincioșilor, ne bucurăm că am fost primiți de vecinii din preajmă cu căldură. Astăzi, în timp ce lucra echipa de electricieni, s-a apropiat o doamnă și a mărturisit bucuria ei de a vedea că Biserica «Sfântul Nicolae» din Auvers-sur-Oise prinde din nou viață. Ușile s-au deschis după cei 40 de ani de abandonare. Prin mila lui Dumnezeu și prin sprijinul credincioșilor, vom reuși să ducem la bun sfârșit renovarea bisericii”.
 								</p>
-							</header>
-							<section>
-								<h2>article section h2</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-							</section>
-							<section>
-								<h2>article section h2</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
 							</section>
 						</article>
 						<aside>
-							<h3>aside</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
 						</aside>
 					</div> <!-- #main -->
 				</div> <!-- #main-container -->
@@ -328,6 +315,7 @@
 			</div>
 		</div>
 			<!-- Include scripts -->
+			<script src="utile/js/late_plugins.js"></script>
 	</div>
 	</body>
 </html>
