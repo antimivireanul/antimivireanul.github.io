@@ -408,13 +408,13 @@ background: -ms-linear-gradient(top, rgba(57,64,81,1) 0%, rgba(57,64,81,0.4) 12%
 background: linear-gradient(to bottom, rgba(57,64,81,1) 0%, rgba(57,64,81,0.4) 12%, rgba(255,255,255,0.8) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#394051', endColorstr='#ffffff', GradientType=0 );
 }
-.map-responsive{
+.iframe-responsive{
     overflow:hidden;
     padding-bottom:56.25%;
     position:relative;
     height:0;
 }
-.map-responsive iframe{
+.iframe-responsive iframe{
     left:0;
     top:0;
     height:100%;
