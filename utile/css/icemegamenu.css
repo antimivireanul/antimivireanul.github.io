@@ -9,7 +9,14 @@
  * @Support 	http://www.icetheme.com/Forums/IceMegaMenu/
  *
  */
- 
+@font-face {
+    font-family: 'zamolxis_viiregular';
+    src: url('../fonts/zamolxis/zamolxis-webfont.woff2') format('woff2'),
+         url('../fonts/zamolxis/zamolxis-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} 
 
 /* Larger than tablet */
 @media (min-width: 750px) {
@@ -54,7 +61,7 @@ div.icemegamenu ul#icemegamenu {
 	
 			div.icemegamenu ul#icemegamenu li span.icemega_title,
 			div#subMenusContainer span.icemega_title {
-				font-family: 'Zamolxis-VII', Arial, sans-serif;	
+				font-family: 'zamolxis_viiregular', Arial, sans-serif;	
 				font-size:1.3em;}
 		
 			div.icemegamenu ul#icemegamenu li span.icemega_desc,
