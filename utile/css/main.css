@@ -96,11 +96,9 @@ body{font-size:calc(2em - 0.1vw);}
 .has-docked-nav .navbar-spacer{display:block;}
 .has-docked-nav .navbar > .container{width:80%;}
 #subMenusContainer .active a span{color:#FFF!important;}
-#menusus ul li{border-right:1px solid #FFFFFF;color:#CCCCCC;display:inline-block;font-family:TrajanPro;line-height:16px;list-style:none outside none;padding:0 10px;text-transform:uppercase;}
+#menusus ul li{border-right:1px solid #FFFFFF;color:#CCCCCC;display:inline-block;line-height:16px;list-style:none outside none;padding:0 10px;text-transform:uppercase;}
 .icemegamenu .active a span{color:#FFF!important;}
 .icemegamenu{position:relative;}
-@font-face{font-family:TrajanPro;src:url('/TrajanPro-Regular.otf'),
-url('/TrajanPro-Regular.ttf');}
 #menusus{background:url("../../pics/menubar.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);float:left;height:67px;margin:0;width:100%;max-width:1120px;}
 .icesubMenu .sub_level_2{left:-15px !important;top:50px!important}
 }
