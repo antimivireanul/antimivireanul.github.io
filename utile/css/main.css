@@ -21,7 +21,7 @@ body{font-size:calc(2em - 0.1vw);}
   display: -ms-flexbox;		
   display: flex;
 }
-
+.icoana img{margin:0 auto;width:100%;max-width:16vw;text-align:center;}
 .has-docked-nav #navmobile{position:fixed;top:0;max-width:58vw;width:100%;}
 }
 @media screen and (min-width:1220px){.adresa {font-size: calc(0.3em + 0.9vw);}
@@ -59,7 +59,7 @@ header h1{font-family:"Oswald",Arial,sans-serif;color:white;padding-bottom:10px;
 header h1:after{content:"";background:red;position:absolute;bottom:0;left:0;height:4px;width:100px;}
 .fixedbackground{background-size:100%;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;background-attachment:fixed;background-position:center;background-repeat:no-repeat;}
 .adresa{color:#e5c06f;text-shadow:0px 0px 2px black;text-align:center;padding:1em;}
-.icoana img{margin:0 auto;width:100%;max-width:370px;text-align:center;}
+.icoana img{margin:0 auto;width:100%;max-width:160px;text-align:center;}
 .main-container{padding:10px}
 .row.match-my-cols{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;flex-wrap:wrap;}
 .row.match-my-cols [class*="col-"]{display:flex;flex-direction:column;}
