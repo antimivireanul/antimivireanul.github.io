@@ -1,48 +1,19 @@
 $(document).ready(function() {
 
   // Variables
-  var $codeSnippets = $('.code-example-body'),
-      $nav = $('.stickynav'),
+  var $nav = $('.stickynav'),
       $body = $('body'),
       $window = $(window),
-      $popoverLink = $('[data-popover]'),
-      navOffsetTop = $nav.offset().top,
-      $document = $(document),
-      entityMap = {
-        "&": "&amp;",
-        "<": "&lt;",
-        ">": "&gt;",
-        '"': '&quot;',
-        "'": '&#39;',
-        "/": '&#x2F;'
-      }
+      navOffsetTop = $nav.offset().top
 
   function init() {
     $window.on('scroll', onScroll)
     $window.on('resize', onScroll)
-    $('a[href^="#"]').on('click', smoothScroll)
-    buildSnippets();
+    
   }
 
-  function smoothScroll(e) {
-    e.preventDefault();
-    $(document).off("scroll");
-    var target = this.hash,
-        menu = target;
-    $target = $(target);
-    $('html, body').stop().animate({
-        'scrollTop': $target.offset().top-40
-    }, 0, 'swing', function () {
-        window.location.hash = target;
-        $(document).on("scroll", onScroll);
-    });
-  }
 
-  $("#button").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#elementtoScrollToID").offset().top
-    }, 2000);
-});
+
 
   function resize() {
     $body.removeClass('has-docked-nav')
@@ -61,20 +32,43 @@ $(document).ready(function() {
 	
   }
 
-  function escapeHtml(string) {
-    return String(string).replace(/[&<>"'\/]/g, function (s) {
-      return entityMap[s];
-    });
-  }
-
-  function buildSnippets() {
-    $codeSnippets.each(function() {
-      var newContent = escapeHtml($(this).html())
-      $(this).html(newContent)
-    })
-  }
-
-
   init();
+  
+
 
 });
+	  // Select all links with hashes
+	$('a[href*="#"]')
+	  // Remove links that don't actually link to anything
+	  .not('[href="#"]')
+	  .not('[href="#0"]')
+	  .click(function(event) {
+		// On-page links
+		if (
+		  location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+		  && 
+		  location.hostname == this.hostname
+		) {
+		  // Figure out element to scroll to
+		  var target = $(this.hash);
+		  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+		  // Does a scroll target exist?
+		  if (target.length) {
+			// Only prevent default if animation is actually gonna happen
+			event.preventDefault();
+				var $iceMenu_old=$('#icemegamenu .active').closest('li').attr('id');
+				$('#' + $iceMenu_old).removeClass('active');
+				$('#navmobile li.active.slicknav_parent').removeClass('active');
+				
+				var $iceMenu_new=$(this).closest('.parent').attr('id');
+				$('#' + $iceMenu_new).addClass('active');
+				$(this).closest('a.slicknav_item.slicknav_row').addClass('active');
+				$(this).closest('li.active.slicknav_parent').addClass('active');
+			$('html, body').animate({
+			  scrollTop: target.offset().top-70
+			}, 1000, function() {
+			  
+			});
+		  }
+		}
+	  });
