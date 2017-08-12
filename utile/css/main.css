@@ -23,8 +23,23 @@ body{font-size:calc(2em - 0.1vw);}
 .icoana img{margin:0 auto;width:100%;max-width:16vw;text-align:center;}
 .has-docked-nav #navmobile{position:fixed;top:0;max-width:58vw;width:100%;}
 .egale {overflow: hidden; }
-.colegale {margin-bottom: -99999px;
-    padding-bottom: 99999px;}
+.colegale {margin-bottom: -99999px;padding-bottom: 99999px;}
+
+.fb-like body.plugin iframe button.inlineBlock{
+    font-size: calc(2em - 0.1vw) !important;
+    width: 90px !important;
+    height: 40px !important;
+    border-radius: 15px !important;
+}
+.fb-like body.plugin iframe button.inlineBlock span.inlineBlock svg{
+	height: 26px !important;
+	width: 26px !important;
+}
+.fb-like body.plugin iframe button.inlineBlock span.inlineBlock{
+	height: 26px !important;
+	width: 26px !important;
+}
+
 }
 @media screen and (min-width:1220px){.adresa {font-size: calc(0.3em + 0.9vw);}
 .navbar + .docs-section{border-top-width:0;}
