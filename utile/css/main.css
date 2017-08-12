@@ -12,8 +12,8 @@ body{font-size:calc(2em - 0.1vw);}
 .icoana img{margin:0 auto;width:100%;width:165px;text-align:center;}
 .slicknav_menu{display:none;}
 .head_grad_left{z-index: 9999;min-height: 210px;}
-.bus{width: 100%;margin: 0 auto;padding: 20px;}
-.bus img{width: 100%;}
+.pic-centru{width: 100%;margin: 0 auto;padding: 20px;}
+.pic-centru img{width: 100%;}
 @media screen and (min-width:990px){.mob-hidden{min-height:1px;}
 .inger_st, .inger_dr, .doxowidgetrugaciuni{display:block;}
 .inger_st, .inger_dr{height: calc(5.8em + 9vw);}
@@ -24,7 +24,6 @@ body{font-size:calc(2em - 0.1vw);}
 .has-docked-nav #navmobile{position:fixed;top:0;max-width:58vw;width:100%;}
 .egale {overflow: hidden; }
 .colegale {margin-bottom: -99999px;padding-bottom: 99999px;}
-
 }
 @media screen and (min-width:1220px){.adresa {font-size: calc(0.3em + 0.9vw);}
 .navbar + .docs-section{border-top-width:0;}
