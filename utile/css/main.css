@@ -8,10 +8,11 @@
 body{font-size:calc(1.8em + 0.1vw);}
 .has-docked-nav #navmobile{position:fixed;top:0;width:100%;z-index:99;}
 #wowslider-container1{margin:0 auto !important}
-.adresa{font-size:16px;}
-.icoana img{margin:0 auto;width:100%;width:200px;text-align:center;}
+.adresa{font-size:15px;}
+.cont{font-size:16px;}
+.icoana img{margin:0 auto;width:100%;width:180px;text-align:center;}
 .slicknav_menu{display:none;}
-.head_grad_left{z-index: 9999;min-height: 250px;}
+.head_grad_left{z-index: 9999;min-height: 280px;}
 .pic-centru{width: 100%;max-width:900px;margin: 0 auto;padding: 20px;}
 .pic-centru img{width: 100%;max-width:900px;}
 @media screen and (min-width:990px){.mob-hidden{min-height:1px;}
@@ -20,12 +21,12 @@ body{font-size:calc(1.8em + 0.1vw);}
 .value-props{margin-top:9rem;margin-bottom:7rem;}
 .value-img{margin-bottom:1rem;}
 #wowslider-container1{margin:19px auto 17px !important}
-.icoana img{margin:0 auto;width:100%;max-width:16vw;text-align:center;}
+.icoana img{margin:0 auto;width:100%;max-width:18vw;text-align:center;}
 .has-docked-nav #navmobile{position:fixed;top:0;max-width:58vw;width:100%;}
 .egale {overflow: hidden; }
 .colegale {margin-bottom: -99999px;padding-bottom: 99999px;}
 }
-@media screen and (min-width:1220px){.adresa {font-size: calc(0.3em + 0.9vw);}
+@media screen and (min-width:1220px){.adresa, .cont{font-size: calc(0.3em + 0.9vw);}
 .navbar + .docs-section{border-top-width:0;}
 .navbar, .navbar-spacer{display:block;width:100%;height:6.5rem;z-index:99;}
 .navbar-spacer{display:none;}
@@ -39,6 +40,7 @@ body{font-size:calc(1.8em + 0.1vw);}
 .icemegamenu{position:relative;}
 #menusus{background:url("../../pics/menubar.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);float:left;height:67px;margin:0;width:100%;max-width:1113px;}
 .icesubMenu .sub_level_2{left:-15px !important;top:50px!important}
+.head_grad_left{min-height: 210px;}
 }
 @media screen and (max-width:1220px){.js #icemegamenu{display:none;}
 .js .slicknav_item{text-decoration:none;}
@@ -60,11 +62,11 @@ body{font-size:calc(1.8em + 0.1vw);}
 header h1{font-family:"Oswald",Arial,sans-serif;color:white;padding-bottom:10px;display:block;font-size:calc(1.4em + 0.5vw);margin-top:10px;overflow:hidden;height:5.7rem;position:relative;text-shadow:0px 0px 10px black;}
 header h1:after{content:"";background:red;position:absolute;bottom:0;left:0;height:4px;width:100px;}
 .fixedbackground{background-size:100%;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;background-attachment:fixed;background-position:center;background-repeat:no-repeat;}
-.adresa{color:#e5c06f;text-shadow:0px 0px 2px black;text-align:center;padding:1em;}
+.adresa{color:#e5c06f;text-shadow:0px 0px 2px black;text-align:center;padding:0;padding-left:10px}
+.cont{color:#e5c06f;text-shadow:0px 0px 2px black;text-align:center;padding:1em;}
 .main-container{padding:10px}
 .row.match-my-cols{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;flex-wrap:wrap;}
 .row.match-my-cols [class*="col-"]{display:flex;flex-direction:column;}
-.head_grad_left .adresa{padding-top:0;}
 .main-container article{color:black;}
 .main-container aside{color:black;}
 .doxo-table .data-curenta{font-size:26px !important;}
@@ -83,4 +85,4 @@ header h1:after{content:"";background:red;position:absolute;bottom:0;left:0;heig
 .doxo-table .doxo-widget-rugaciuni .view-content .views-field-title a{font-size:2rem !important;}
 .inger_st{margin:0 auto;top:100px;position:relative;left:0px;z-index:5;}
 .inger_dr{margin:0 auto;top:100px;position:absolute;right:0;z-index:5;-moz-transform:scaleX(-1);-o-transform:scaleX(-1);-webkit-transform:scaleX(-1);transform:scaleX(-1);filter:FlipH;-ms-filter:"FlipH";}
-.adresa a, .adresa address a{color:inherit !important;text-decoration:none !important;font-size:inherit !important;font-family:inherit !important;font-weight:inherit !important;line-height:inherit !important;}
+.adresa a, .cont a, .adresa address a, .cont address a{color:inherit !important;text-decoration:none !important;font-size:inherit !important;font-family:inherit !important;font-weight:inherit !important;line-height:inherit !important;}
