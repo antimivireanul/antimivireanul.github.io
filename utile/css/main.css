@@ -5,13 +5,13 @@
 .navbar, .inger_st, .inger_dr, .doxowidgetrugaciuni{display:none;}
 .mob-hidden{min-height:0;}
 .head_grad_top .title{padding:15px;font-family:'Arhaic_rom', Arial, sans-serif;color:#e5c06f;text-shadow:0px 0px 35px black;font-size:48px;font-size:calc(1.7em + 1.3vw);}
-body{font-size:calc(2em - 0.1vw);}
+body{font-size:calc(1.8em + 0.1vw);}
 .has-docked-nav #navmobile{position:fixed;top:0;width:100%;z-index:99;}
 #wowslider-container1{margin:0 auto !important}
 .adresa{font-size:16px;}
-.icoana img{margin:0 auto;width:100%;width:165px;text-align:center;}
+.icoana img{margin:0 auto;width:100%;width:200px;text-align:center;}
 .slicknav_menu{display:none;}
-.head_grad_left{z-index: 9999;min-height: 210px;}
+.head_grad_left{z-index: 9999;min-height: 250px;}
 .pic-centru{width: 100%;max-width:900px;margin: 0 auto;padding: 20px;}
 .pic-centru img{width: 100%;max-width:900px;}
 @media screen and (min-width:990px){.mob-hidden{min-height:1px;}
