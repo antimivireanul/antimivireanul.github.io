@@ -15,9 +15,43 @@ $(document).ready(function() {
 		$back_to_top = $('.cd-top');
 
   function init() {
-    $window.on('scroll', onScroll)
+    $('a[href*="#"]')
+	  // Remove links that don't actually link to anything
+	  .not('[href="#"]')
+	  .not('[href="#0"]')
+	  .click(function(event) {	  
+		// On-page links
+		if (
+		  location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+		  && 
+		  location.hostname == this.hostname
+		) {
+		  // Figure out element to scroll to
+		  var target = $(this.hash);
+		  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+		  // Does a scroll target exist?
+		  if (target.length) {
+			// Only prevent default if animation is actually gonna happen
+			event.preventDefault();
+				var $iceMenu_old=$('#icemegamenu .active').closest('li').attr('id');
+				$('#' + $iceMenu_old).removeClass('active');
+				$('.js .slicknav_menu li.iceMenuLiLevel_1.active.slicknav_open').removeClass('active');
+				
+				var $iceMenu_new=$(this).closest('.parent').attr('id');
+				$('#' + $iceMenu_new).addClass('active');
+				$(this).closest('li.iceMenuLiLevel_1.slicknav_open').addClass('active');
+			$('html, body').animate({
+			  scrollTop: target.offset().top-70
+			}, 1000, function() {
+			  
+			});
+		  }
+		}
+	  });
+	$window.on('scroll', onScroll)
     $window.on('resize', onScroll)
-    
+      // Select all links with hashes
+	
   }
 
   function resize() {
@@ -26,9 +60,9 @@ $(document).ready(function() {
     onScroll()
   }
   function onScroll() {
-	  $body.removeClass('has-docked-nav')
+	  
     navOffsetTop = $nav.offset().top
-    if(navOffsetTop < $window.scrollTop()) {
+    if(navOffsetTop < $window.scrollTop() && !$body.hasClass('has-docked-nav')) {
 		$body.addClass('has-docked-nav')
     }
     if(navOffsetTop > $window.scrollTop() && $body.hasClass('has-docked-nav')) {
@@ -54,38 +88,4 @@ $(document).ready(function() {
 
 
 });
-	  // Select all links with hashes
-	$('a[href*="#"]')
-	  // Remove links that don't actually link to anything
-	  .not('[href="#"]')
-	  .not('[href="#0"]')
-	  .click(function(event) {
-		// On-page links
-		if (
-		  location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-		  && 
-		  location.hostname == this.hostname
-		) {
-		  // Figure out element to scroll to
-		  var target = $(this.hash);
-		  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-		  // Does a scroll target exist?
-		  if (target.length) {
-			// Only prevent default if animation is actually gonna happen
-			event.preventDefault();
-				var $iceMenu_old=$('#icemegamenu .active').closest('li').attr('id');
-				$('#' + $iceMenu_old).removeClass('active');
-				$('#navmobile li.active.slicknav_parent').removeClass('active');
-				
-				var $iceMenu_new=$(this).closest('.parent').attr('id');
-				$('#' + $iceMenu_new).addClass('active');
-				$(this).closest('a.slicknav_item.slicknav_row').addClass('active');
-				$(this).closest('li.active.slicknav_parent').addClass('active');
-			$('html, body').animate({
-			  scrollTop: target.offset().top-70
-			}, 1000, function() {
-			  
-			});
-		  }
-		}
-	  });
+	
