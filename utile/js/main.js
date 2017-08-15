@@ -52,6 +52,12 @@ $(document).ready(function() {
     $window.on('resize', onScroll)
       // Select all links with hashes
 	
+	$(".directii_accordion").smk_Accordion({
+		showIcon: true, //boolean
+		animation: true, //boolean
+		closeAble: true, //boolean
+		slideSpeed: 200 //integer, miliseconds
+	});
   }
 
   function resize() {
