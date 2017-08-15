@@ -70,6 +70,8 @@ header h1:after{content:"";background:red;position:absolute;bottom:0;left:0;heig
 .row.match-my-cols [class*="col-"]{display:flex;flex-direction:column;}
 .main-container article{color:black;}
 .main-container aside{color:black;}
+.doxo-table .doxo-widget-rugaciuni .view-footer, .doxo-table .doxo-widget-calendar .view-footer{display:none;}
+.doxo-table .doxo-widget-rugaciuni .view-header {margin-top:0px;}
 .doxo-table .data-curenta{font-size:26px !important;}
 .doxo-table .doxo-widget-rugaciuni .data-curenta{font-size:26px !important;text-align:right;}
 .doxo-table .doxo-widget-rugaciuni .view-header{border-bottom:none;}
