@@ -89,6 +89,7 @@ header h1:after{content:"";background:red;position:absolute;bottom:0;left:0;heig
 .inger_st{margin:0 auto;top:70px;position:relative;left:0px;z-index:5;}
 .inger_dr{margin:0 auto;top:70px;position:absolute;right:0;z-index:5;-moz-transform:scaleX(-1);-o-transform:scaleX(-1);-webkit-transform:scaleX(-1);transform:scaleX(-1);filter:FlipH;-ms-filter:"FlipH";}
 .adresa a, .cont a, .adresa address a, .cont address a{color:inherit !important;text-decoration:none !important;font-size:inherit !important;font-family:inherit !important;font-weight:inherit !important;line-height:inherit !important;}
+.fb-like .confirmButton {color:gold;font-size: calc(1.7em + 0.1vw);text-decoration: none;}
 .cd-top {
   display: inline-block;
   height: 40px;
