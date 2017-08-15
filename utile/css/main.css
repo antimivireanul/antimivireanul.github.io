@@ -86,8 +86,8 @@ header h1:after{content:"";background:red;position:absolute;bottom:0;left:0;heig
 .doxo-table .doxo-widget-calendar a.c-b-ev{font-size:1.8rem !important;line-height:2.2rem;}
 .doxo-table .doxo-widget-rugaciuni .view-content{text-align:right;}
 .doxo-table .doxo-widget-rugaciuni .view-content .views-field-title a{font-size:2rem !important;}
-.inger_st{margin:0 auto;top:100px;position:relative;left:0px;z-index:5;}
-.inger_dr{margin:0 auto;top:100px;position:absolute;right:0;z-index:5;-moz-transform:scaleX(-1);-o-transform:scaleX(-1);-webkit-transform:scaleX(-1);transform:scaleX(-1);filter:FlipH;-ms-filter:"FlipH";}
+.inger_st{margin:0 auto;top:70px;position:relative;left:0px;z-index:5;}
+.inger_dr{margin:0 auto;top:70px;position:absolute;right:0;z-index:5;-moz-transform:scaleX(-1);-o-transform:scaleX(-1);-webkit-transform:scaleX(-1);transform:scaleX(-1);filter:FlipH;-ms-filter:"FlipH";}
 .adresa a, .cont a, .adresa address a, .cont address a{color:inherit !important;text-decoration:none !important;font-size:inherit !important;font-family:inherit !important;font-weight:inherit !important;line-height:inherit !important;}
 .cd-top {
   display: inline-block;
