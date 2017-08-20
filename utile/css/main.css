@@ -16,7 +16,6 @@ body{font-size:calc(1.7em + 0.1vw);}
 .pic-centru{width: 100%;max-width:900px;margin: 0 auto;padding: 20px;}
 .pic-centru img{width: 100%;max-width:900px;}
 .referral{display:none !important;margin:0 auto !important;}
-
 @media screen and (min-width:990px){.mob-hidden{min-height:1px;}
 .inger_st, .inger_dr, .doxowidgetrugaciuni{display:block;}
 .inger_st, .inger_dr{height: calc(5.8em + 9vw);}
