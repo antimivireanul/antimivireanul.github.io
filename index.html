@@ -894,6 +894,18 @@ $(nodes).wrapAll('<span class="'+prefix+'_parent-link '+prefix+'_row"/>').parent
 		</div>
 			<!-- Include scripts -->
 			<script src="utile/js/late_plugins.js"></script>
+			<script type="text/javascript">
+
+				jQuery(document).ready(function($){
+					$(".directii_accordion").smk_Accordion({
+						showIcon: true, //boolean
+						animation: true, //boolean
+						closeAble: true, //boolean
+						slideSpeed: 200 //integer, miliseconds
+					});
+				});
+
+			</script>
 	</div>
 	</body>
 </html>

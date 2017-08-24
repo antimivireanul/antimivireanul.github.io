@@ -1,3 +1,4 @@
+Sitemap: https://antimivireanul.ml/sitemap.xml
 User-agent: *
 Disallow: /search
 Allow: /search/about
