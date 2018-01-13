@@ -181,7 +181,7 @@ header h1:after{content:"";background:red;position:absolute;bottom:0;left:0;heig
     bottom: 30px;
   }
 }
-@font-face{font-family:'Trajan Pro';src:url('utile/fonts/Trajan Pro.ttf') format('truetype');font-weight:normal;font-style:normal;}
+@font-face{font-family:'Trajan Pro';src:url('../../utile/fonts/Trajan Pro.ttf') format('truetype');font-weight:normal;font-style:normal;}
 @media (min-width:750px){div.icemegamenu{position:relative;text-align:center;width:100%;margin:27px 0 0 0;}
 div.icemegamenu ul#icemegamenu{display:inline-block;background:#3a4150;list-style:none;margin:0 auto;padding:0;z-index:50000;position:relative;}
 div.icemegamenu ul#icemegamenu li{display:block;list-style:none;margin:0;padding:0;position:relative;float:left;}
@@ -217,7 +217,7 @@ div#subMenusContainer ul.icesubMenu li div.iceCols li{padding:0 15px;}
 div#subMenusContainer a.iceMenuTitle,
 div#subMenusContainer span.separator,
 div.icemegamenu #icemegamenu ul.icesubMenu li a.iceMenuTitle,
-div.icemegamenu #icemegamenu ul.icesubMenu li span.separator{height:auto;min-width:235px;padding:5px 0 8px 16px;color:#ccc;text-shadow:1px 1px 1px #000;margin:0;background:url(pics/point.png) no-repeat 0% 45%;}
+div.icemegamenu #icemegamenu ul.icesubMenu li span.separator{height:auto;min-width:235px;padding:5px 0 8px 16px;color:#ccc;text-shadow:1px 1px 1px #000;margin:0;background:url(../../pics/point.png) no-repeat 0% 45%;}
 div#subMenusContainer span.icemega_title{}
 div#subMenusContainer ul.icesubMenu li div.iceCols li.parent{}
 #subMenusContainer a.iceMenuTitle:hover,
