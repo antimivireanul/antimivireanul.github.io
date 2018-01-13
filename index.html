@@ -72,6 +72,7 @@
 		<script>
 			//cookieValue = document.cookie.match(/(;)?cookiebar=([^;]*);?/)[2];
 			//	if (cookieValue == 'CookieAllowed') {
+			setTimeout( function () {
 					  window.fbAsyncInit = function() {
 						FB.init({
 						  appId      : '1508302189229191',
@@ -88,6 +89,7 @@
 						 js.src = "//connect.facebook.net/ro_RO/sdk.js";
 						 fjs.parentNode.insertBefore(js, fjs);
 					   }(document, 'script', 'facebook-jssdk'));
+						}, 3000);
 				//}
 		</script>
 		<!--[if lt IE 9]>
