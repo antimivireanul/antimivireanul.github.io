@@ -500,6 +500,11 @@ $(nodes).wrapAll('<span class="'+prefix+'_parent-link '+prefix+'_row"/>').parent
 									</div>
 								</div>
 								<!-- Accordion end -->
+								<script type="text/javascript">
+									jQuery(document).ready(function($){
+										$(".directii_accordion").smk_Accordion();
+									});
+								</script>
 								</section>
 							</header>
 						</article>
@@ -743,11 +748,6 @@ $(nodes).wrapAll('<span class="'+prefix+'_parent-link '+prefix+'_row"/>').parent
 				</div>
 			</div>
 		</div>
-			<script type="text/javascript">
-				jQuery(document).ready(function($){
-					$(".directii_accordion").smk_Accordion();
-				});
-			</script>
 			<script type="text/javascript">
 				function downloadJSAtOnload() {
 				var lateplugins = document.createElement("script");
