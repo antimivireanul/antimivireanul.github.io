@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
   // Variables
   var $nav = $('.stickynav'),
       $body = $('body'),
@@ -13,17 +12,16 @@ $(document).ready(function() {
 		scroll_top_duration = 700,
 		//grab the "back to top" link
 		$back_to_top = $('.cd-top');
-
   function init() {
     $('a[href*="#"]')
 	  // Remove links that don't actually link to anything
 	  .not('[href="#"]')
 	  .not('[href="#0"]')
-	  .click(function(event) {	  
+	  .click(function(event) {
 		// On-page links
 		if (
-		  location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-		  && 
+		  location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+		  &&
 		  location.hostname == this.hostname
 		) {
 		  // Figure out element to scroll to
@@ -36,14 +34,13 @@ $(document).ready(function() {
 				var $iceMenu_old=$('#icemegamenu .active').closest('li').attr('id');
 				$('#' + $iceMenu_old).removeClass('active');
 				$('.js .slicknav_menu li.iceMenuLiLevel_1.active.slicknav_open').removeClass('active');
-				
+
 				var $iceMenu_new=$(this).closest('.parent').attr('id');
 				$('#' + $iceMenu_new).addClass('active');
 				$(this).closest('li.iceMenuLiLevel_1.slicknav_open').addClass('active');
 			$('html, body').animate({
 			  scrollTop: target.offset().top-70
-			}, 1000, function() {
-			  
+			}, 1000, function() {		  
 			});
 		  }
 		}
@@ -52,14 +49,12 @@ $(document).ready(function() {
     $window.on('resize', onScroll)
       // Select all links with hashes
   }
-
   function resize() {
     $body.removeClass('has-docked-nav')
     navOffsetTop = $nav.offset().top
     onScroll()
   }
   function onScroll() {
-	  
     navOffsetTop = $nav.offset().top
     if(navOffsetTop < $window.scrollTop() && !$body.hasClass('has-docked-nav')) {
 		$body.addClass('has-docked-nav')
@@ -68,11 +63,10 @@ $(document).ready(function() {
       $body.removeClass('has-docked-nav')
     }
 	( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
-		if( $(this).scrollTop() > offset_opacity ) { 
+		if( $(this).scrollTop() > offset_opacity ) {
 			$back_to_top.addClass('cd-fade-out');
 		}
   }
-
   //smooth scroll to top
 	$back_to_top.on('click', function(event){
 		event.preventDefault();
@@ -81,10 +75,5 @@ $(document).ready(function() {
 		 	}, scroll_top_duration
 		);
 	});
-
   init();
-  
-
-
 });
-	
