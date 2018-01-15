@@ -61,7 +61,7 @@
 		<!-- End WOWSlider.com HEAD section -->
 		<script type="text/javascript" src="utile/js/jquery.min3.js"></script>
 		<script type="text/javascript" src="utile/js/modernizr.min.js"></script>
-		<script type="text/javascript" src="utile/js/smk-accordion.min.js"></script>
+		<script type="text/javascript" src="utile/js/accordion.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="//assets.juicer.io/embed.css"/>
 	</head>
 	<body>
@@ -433,10 +433,10 @@ $(nodes).wrapAll('<span class="'+prefix+'_parent-link '+prefix+'_row"/>').parent
 							<header><h1>Cum ajung la Biserică?</h1>
 								<section>
 								<!-- Accordion begin -->
-								<div class="directii_accordion" data-active-index="false">
-									<div class="accordion_in">
-										<div class="acc_head"><div class="acc_icon_expand"></div><h3>Cu autobuzul (bus 95-07):</h3></div>
-										<div class="acc_content">
+								<ul class="directii_accordion accordionjs" data-active-index="false">
+									<li>
+										<div><div class="acc_icon_expand"></div><h3>Cu autobuzul (bus 95-07):</h3></div>
+										<div>
 											<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Stație "AUVERS s/Oise Chapelle Saint Nicolas".
 											</p><br>
 											<div class="pic-centru">
@@ -449,10 +449,10 @@ $(nodes).wrapAll('<span class="'+prefix+'_parent-link '+prefix+'_row"/>').parent
 											</div>
 											<a href="http://www.valmondois.fr/sites/valmondois/files/document/article/95-07_fiche_horaire_janvier_2015.pdf">Orar autobuz 95-07</a>
 										</div>
-									</div>
-									<div class="accordion_in">
-										<div class="acc_head"><div class="acc_icon_expand"></div><h3>Din autostrada A15 (drum cu taxă):</h3></div>
-										<div class="acc_content">
+									</li>
+									<li>
+										<div><div class="acc_icon_expand"></div><h3>Din autostrada A15 (drum cu taxă):</h3></div>
+										<div>
 											<p>
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Din A15 spre Place du Pont / 5 Quai du Pothuis / D915Z,<br>
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Continuați pe Quai Eugene Turpin/D4 (indicatoarele pentru Auvers s/ Oise),<br>
@@ -461,10 +461,10 @@ $(nodes).wrapAll('<span class="'+prefix+'_parent-link '+prefix+'_row"/>').parent
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Destinatie: 24 Rue Simone le Danois, 95430 Auvers-sur-Oise<br>
 											</p>
 										</div>
-									</div>
-									<div class="accordion_in">
-										<div class="acc_head"><div class="acc_icon_expand"></div><h3>Din autostrada A1 (drum cu taxă):</h3></div>
-										<div class="acc_content">
+									</li>
+									<li>
+										<div><div class="acc_icon_expand"></div><h3>Din autostrada A1 (drum cu taxă):</h3></div>
+										<div>
 											<p>
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Din A1 urmăriți ieșirea spre N104 (drum cu taxă),<br>
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- La Rond-Point de la Croix Verte, urmați a 3-a ieșire și rămâneți pe N104 către Paris/Cergy-Pontoise/Montsoult-Centre/Baillet-en-France/Domon<br>
@@ -479,31 +479,31 @@ $(nodes).wrapAll('<span class="'+prefix+'_parent-link '+prefix+'_row"/>').parent
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Destinatie: 24 Rue Simone le Danois, 95430 Auvers-sur-Oise<br>
 											</p>
 										</div>
-									</div>
-									<div class="accordion_in">
-										<div class="acc_head"><div class="acc_icon_expand"></div><h3>Cu trenul:</h3></div>
-										<div class="acc_content">
+									</li>
+									<li>
+										<div><div class="acc_icon_expand"></div><h3>Cu trenul:</h3></div>
+										<div>
 											<p>
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Cea mai apropiată gară este Gare de Chaponval, Auvers sur Oise -> legaturi tren H, bus 95-07<br>
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Dinspre Gare de Pontoise, Pontoise -> legaturi J, H, RER C, (pentru conexiune cu bus 95-07 folosiți bus 34N, bus 34S spre Hôtel Dieu)<br>
 											</p>
 										</div>
-									</div>
-									<div class="accordion_in">
-										<div class="acc_head"><div class="acc_icon_expand"></div><h3>Dinspre Aeroport Charles de Gaulle:</h3></div>
-										<div class="acc_content">
+									</li>
+									<li>
+										<div><div class="acc_icon_expand"></div><h3>Dinspre Aeroport Charles de Gaulle:</h3></div>
+										<div>
 											<p>
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Prin A1 (drum cu taxă)<br>
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Prin A15 (drum cu taxă)<br>
 											</p>
 										</div>
-									</div>
-								</div>
+									</li>
+								</ul>
 								<!-- Accordion end -->
-								<script type="text/javascript">
-									jQuery(document).ready(function($){
-										$(".directii_accordion").smk_Accordion();
-									});
+								<script>
+								    jQuery(document).ready(function($){
+								        $(".directii_accordion").accordionjs();
+								    });
 								</script>
 								</section>
 							</header>
