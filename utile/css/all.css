@@ -189,6 +189,7 @@ url('../../engine1/ws-fullscreen.ttf') format('truetype');font-weight:normal;fon
   margin: 5px 0;
   position: relative;
   left: 25px;
+  font-size: calc(1em + .2vw);
 }
 .accordionjs .acc_section .acc_content {
   padding: 10px;
