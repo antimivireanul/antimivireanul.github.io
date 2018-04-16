@@ -242,7 +242,7 @@ url('../../engine1/ws-fullscreen.ttf') format('truetype');font-weight:normal;fon
   height: 100%;
 }
 
-.iframe-jwplayer-responsive iframe .data-app-meta-video-article {
+.iframe-jwplayer-responsive iframe .app-video-embed {
   width: 100% !important;
   height: 100% !important;
   }
