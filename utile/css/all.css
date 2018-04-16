@@ -229,10 +229,7 @@ url('../../engine1/ws-fullscreen.ttf') format('truetype');font-weight:normal;fon
 	background: url(../images/plusminus.png) center -18px;
 }*/
 .iframe-jwplayer-responsive {
-  position: relative;
-  padding-bottom: 56%;
-  padding-top: 20px;
-  height: 0;
+padding-bottom:56.25%;position:relative;height:0;width:80%;margin:0 auto
 }
 .iframe-jwplayer-responsive video {
   position: absolute;
