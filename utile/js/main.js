@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(document).ready(function ($) {
   // Variables
   var $nav = $('.stickynav'),
       $body = $('body'),
@@ -40,7 +40,7 @@ $(document).ready(function() {
 				$(this).closest('li.iceMenuLiLevel_1.slicknav_open').addClass('active');
 			$('html, body').animate({
 			  scrollTop: target.offset().top-70
-			}, 1000, function() {		  
+			}, 1000, function() {
 			});
 		  }
 		}
