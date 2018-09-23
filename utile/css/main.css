@@ -45,7 +45,7 @@ body{font-size:calc(1.7em + 0.1vw);}
 .has-docked-nav #navmobile{position:fixed;top:0;width:100%;z-index:99;}
 #wowslider-container1{margin:0 auto !important}
 .adresa{font-size:15px;}
-.cont{font-size:16px;}
+.cont{font-size:13.5px;}
 .icoana img{margin:0 auto;width:100%;width:180px;text-align:center;}
 .slicknav_menu{display:none;}
 .head_grad_left{z-index: 9999;min-height: 280px;}
@@ -64,7 +64,7 @@ body{font-size:calc(1.7em + 0.1vw);}
 .colegale {margin-bottom: -99999px;padding-bottom: 99999px;}
 }
 @media screen and (min-width:1220px){.adresa{font-size: calc(0.3em + 0.9vw);}
-.cont{font-size: calc(0.3em + 0.88vw);}
+.cont{font-size: calc(0.072em + 1.1vw);}
 .navbar + .docs-section{border-top-width:0;}
 .navbar, .navbar-spacer{display:block;width:100%;height:6.5rem;z-index:99;}
 .navbar-spacer{display:none;}
